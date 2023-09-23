@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Food panda!</title>
+</head>
+
+<body>
+    <div class="top" style="display: flex;">
+        <div class="logo">
+            <img src="./fd.jpeg" alt="picture" width="60px">
+        </div>
+        <br>
+        <br>
+        <div class="text">
+            <h1 id="ass" d-flex>food panda</h1>
+        </div>
+        <div class="btn" style="margin-top: 1.3%; margin-left: 60%; display: flex;">
+            <div class="sign">
+                <a href="./signup.html"><button class="log">log in </button></a>
+
+            </div>
+            <div class="gap1"></div>
+            <div class="login" style="margin-left: 10px;">
+                <a href="./signup.html"><button class="log1">Sign up </button></a>
+
+            </div>
+        </div>
+        <div class="gap1"></div>
+        <div class="nav-search" style="margin-top: 1.9%;">
+            <div class="lang" style="margin-top: 2.6%;">
+                <select name="devices">
+                    <option value="ipod">EN</option>
+                    <option value="radio">English</option>
+                </select>
+            </div>
+
+            <!-- <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+                <div><li><a class="drop-1" href="#">English</a></li>
+                    </div>
+
+            </ul> -->
+        </div>
+        <div class="gap1"></div>
+        <div class="cart">
+            <svg aria-hidden="true" focusable="false" class="fl-brand-primary" width="24" height="24"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.0021 2C14.5418 2 16.4241 3.6512 16.5538 6.15854H19.8491C20.4014 6.15854 20.8491 6.60625 20.8491 7.15854C20.8491 7.20585 20.8457 7.25311 20.8391 7.29996L19.1248 19.1414C19.0544 19.6341 18.6325 20 18.1348 20H5.86942C5.37176 20 4.94984 19.6341 4.87947 19.1414L3.16518 7.29996C3.08707 6.75322 3.46697 6.24669 4.0137 6.16859C4.06055 6.16189 4.10781 6.15854 4.15513 6.15854L7.36129 6.16397C7.49108 3.65663 9.46248 2 12.0021 2ZM17.5607 16.25H6.44235C6.22143 16.25 6.04235 16.4291 6.04235 16.65C6.04235 16.669 6.04369 16.6879 6.04638 16.7067L6.25397 18.1567C6.28217 18.3537 6.45092 18.5 6.64993 18.5H17.3533C17.5523 18.5 17.7211 18.3537 17.7492 18.1566L17.9567 16.7066C17.988 16.488 17.836 16.2853 17.6174 16.254C17.5986 16.2513 17.5797 16.25 17.5607 16.25ZM18.8109 7.65854H5.19233C4.97142 7.65854 4.79233 7.83762 4.79233 8.05854C4.79233 8.32251 4.79367 8.09637 4.79635 8.11511L5.71793 14.4066C5.74609 14.6036 5.91486 14.75 6.11391 14.75H17.8891C18.0882 14.75 18.2569 14.6036 18.2851 14.4066L19.2069 8.11513C19.2381 7.89643 19.0862 7.69381 18.8675 7.66256C18.8487 7.65988 18.8298 7.65854 18.8109 7.65854ZM12.0021 3.40323C10.4163 3.40323 9.15495 4.32251 8.91234 5.80175C8.88507 5.96802 8.98943 6.12701 9.15495 6.15854C9.17377 6.16212 9.19289 6.16392 9.21204 6.1639L14.7134 6.15847C14.8772 6.15843 15.0099 6.02566 15.0099 5.86189C15.0099 5.84361 14.9631 5.82209 15.0049 5.80742C14.655 4.32251 13.5918 3.40323 12.0021 3.40323Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="note" style="display:flex;" height="70%">
+
+        <div class="part-2">
+            <h3 float="left" style="margin-top: 20%; margin-left: 12%; display: flex;">
+                It's the food and groceries you love,
+                <br>
+                delivered
+            </h3>
+            <br>
+            <br>
+            <br>
+            <div class="main_container">
+                <div class="input-group">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter your address"
+                            aria-label="Enter your address">
+
+                        <span class="input-group-text"><svg aria-hidden="true" focusable="false" class="fl-none"
+                                width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                id="locate-me">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 2C12.4142 2 12.75 2.33579 12.75 2.75L12.7506 3.67925C12.7507 3.88008 12.8998 4.04968 13.0989 4.07562C13.1524 4.08259 13.1986 4.08909 13.2375 4.09514C16.6725 4.62856 19.3848 7.34731 19.9084 10.7855C19.9135 10.8188 19.9189 10.8575 19.9247 10.9019C19.9506 11.1011 20.1204 11.2502 20.3214 11.2502L21.25 11.25C21.6642 11.25 22 11.5858 22 12C22 12.4142 21.6642 12.75 21.25 12.75L20.3212 12.7506C20.1205 12.7507 19.951 12.8995 19.9249 13.0985C19.9211 13.1273 19.9175 13.1532 19.9141 13.1762C19.4013 16.6567 16.647 19.4078 13.1649 19.9158C13.145 19.9187 13.1228 19.9218 13.0984 19.925C12.8995 19.9511 12.7507 20.1206 12.7506 20.3213L12.75 21.25C12.75 21.6642 12.4142 22 12 22C11.5858 22 11.25 21.6642 11.25 21.25L11.2502 20.3213C11.2502 20.1203 11.1011 19.9505 10.9018 19.9246C10.8535 19.9183 10.8115 19.9124 10.7758 19.9069C7.33814 19.379 4.62167 16.6629 4.09327 13.2254C4.08776 13.1896 4.08184 13.1474 4.07552 13.0989C4.04958 12.8997 3.87997 12.7507 3.67912 12.7506L2.75 12.75C2.33579 12.75 2 12.4142 2 12C2 11.5858 2.33579 11.25 2.75 11.25L3.67818 11.2502C3.87895 11.2502 4.04865 11.1015 4.07487 10.9024C4.07777 10.8805 4.08053 10.8604 4.08317 10.8422C4.58738 7.36412 7.32923 4.61075 10.8016 4.08916C10.8307 4.08479 10.8642 4.08013 10.902 4.07519C11.1012 4.04909 11.2502 3.87936 11.2502 3.67848L11.25 2.75C11.25 2.33579 11.5858 2 12 2ZM12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5ZM12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8ZM12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5Z">
+                                </path>
+                            </svg></span>
+                        <div class="gap"></div>
+                        <div class="space.af">
+                            <a href="https://maps.app.goo.gl/jz4EgwmJyNvwervB8"><button class="log2">Find food
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 
+            <input type="text" class="form-control" placeholder="Enter your address"
+                aria-label="Recipient's username with one button addons">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-outline-secondary" type="button">Button</button> -->
+
+            <br>
+
+        </div>
+
+        <div class="part-1">
+            <img src="./Capture.PNG" alt="picture" width="900px" height="500px" float="left" align="center">
+        </div>
+    </div>
+
+    <h2 style="margin-left:20px"> You Prepare the food, we handle the rest</h2>
+    <br>
+    <br>
+    <div class="img">
+
+        <img src="./fod.jpg" src="pic of chef" width="100%" height="500px">
+        <!-- </div> -->
+        <div class="overlap-box">
+            <h4>list your restaurant or shop on food panda</h4>
+
+            <p class="para">Would u like of milliion of new customers to enjoy your amazing food and groceries?
+                So would we!
+            </p>
+            <br>
+
+            <p class="para">It's simple: we list your menu and product list onlin,
+                help your process order, pick them up and deleiver them to hungry pandas-in a heartbeat!
+            </p>
+            <br>
+            <p class="para">Interested! Let's start our partnership today</p>
+            <br>
+            <a href="./get started.html"><button class="log1">Get Started </button></a>
+        </div>
+    </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    </div>
+    <div class="cities">
+        <h3>Find us in these cities and many more</h3>
+        <div class="container_city" style="display: flex;">
+            <a href="./islamabad.html">
+                <div class="card">
+                    <img src="./isl.jpg" alt="">
+                    <p>Islamabad</p>
+                </div>
+            </a>
+
+            <div class="card">
+                <img src="./kar.jpg" alt="">
+                <p>Karachi</p>
+            </div>
+
+            <div class="card">
+                <img src="./lark.jpg" alt="">
+                <p>Larkana</p>
+            </div>
+            <br>
+            <br>
+            <div class="card">
+                <img src="./pes.jpg" alt="">
+                <p>Peshawar</p>
+            </div>
+            <div class="card">
+                <img src="./quet.jpg" alt="">
+                <p>Quetta</p>
+            </div>
+            <div class="card">
+                <img src="./raw.jpg" alt="">
+                <p>Rawalpindi</p>
+            </div>
+            <div class="card">
+                <img src="./mur.jpg" alt="">
+                <p>Muree</p>
+            </div>
+            <div class="card">
+                <img src="./guj.jpg" alt="">
+                <p>Gujranwala</p>
+            </div>
+            <div class="card">
+                <img src="./bah.jpg" alt="">
+                <p>Bhawalpur</p>
+            </div>
+            <div class="card">
+                <img src="./dera.jpg" alt="">
+                <p>Dera Ghazzi khan</p>
+            </div>
+            <div class="card">
+                <img src="./mul.jpg" alt="">
+                <p>Multan</p>
+            </div>
+            <div class="card">
+                <img src="./guj.jpg" alt="">
+                <p>Gujranwala</p>
+            </div>
+        </div>
+
+        <div class="fourth">
+
+
+            <!-- <a><img src="./download.jpg" alt="im" width="90%" align="center"></a> -->
+        </div>
+
+        <h1>Take your office out to Lunch</h1>
+        <br>
+        <a><img src="./emp.jpg" alt="im" width="100%"></a>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="footer" style="margin: right 40%;">
+        <h2>Order food and groceries online from the best restaurants and shop on foodpandas. </h2>
+
+        <p>Are you hungry? Do you have a long and stressful day? Interested in getting cheesy pizza delivered to office
+            or lokking to avoid
+            the weekly shop? Then foodpanda is the Pakistan best destination for you! food panda offers you a long and
+            detailed list of the best restaurants
+            and shop near you to help make your everday easier.
+        </p>
+
+        <h2>What's new</h2>
+        <p>Wide variety of restaurant and shops, an abundance of cuisine and product</p>
+        <p>High quality deleivery service</p>
+        <p>Live chat feature to give up users instant help when they need it.</p>
+        <p>NEW:Food panda grocery delievery!discover the best shop,pharmecel,bakeries and more near you</p>
+
+        <br>
+        <h2>Frequently Asked Questions</h2>
+        <h4>How can i get food panda delievery?</h4>
+        <p>To get food panda delivery,silply locate the restaurant and shop near you by typing in your address,browse
+            through a variety of restaurant add on cuisine,
+            check mnus and price,choose ypour dishes and add in to the basket.now youb only need to checkout and make
+            the payment.Soon your delicious food will arive at your doorstep.</p>
+        </p>
+        <h4>Which takeout restaurant open now near me</h4>
+        <p>You can check which takeout restaurants are open now near you by simply typing your address in the location
+            bar on foodpanda and pressing search. You will see all the available restaurants and shops that deliver to
+            your area.</p>
+
+        <h4>Does food panda deliver</h4>
+        <p>Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a late-night
+            delivery. Please check which places in Pakistan deliver to you within 24 hours by using your address. You
+            can also order groceries 24 hours a day via pandamart.</p>
+        <h4>Which takeout restaurants open now near me?</h4>
+        <p>You can check which takeout restaurants are open now near you by simply typing your address in the location
+            bar on foodpanda and pressing search. You will see all the available restaurants and shops that deliver to
+            your area.
+        </p>
+        <h4>Does foodpanda deliver 24 hours?</h4>
+        <p>Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a late-night
+            delivery. Please check which places in Pakistan deliver to you within 24 hours by using your address. You
+            can also order groceries 24 hours a day via pandamart.
+        </p>
+        <h4>Can you pay cash for foodpanda?</h4>
+        <p>Yes, you can pay cash on delivery for foodpanda in Pakistan.</p>
+
+        <h4>How can I pay foodpanda online?</h4>
+        <p>You can pay online while ordering at foodpanda Pakistan by using a credit or debit card or PayPal.
+        </p>
+        <h4>Can I order foodpanda for someone else?</h4>
+        <p>
+        <p>Yes, foodpanda Pakistan allows you to place an order for someone else. During checkout, just update the name
+            and delivery address of the person you're ordering for. Please keep in mind that if the delivery details are
+            not correct and the order cannot be delivered, we won't be able to process a refund.
+        </p>
+        <h4>How much does foodpanda charge for delivery?</h4>
+        <p>Delivery fee charged by foodpanda in Pakistan depends on many operational factors, most of all - location and
+            the restaurant you are ordering from. You can always check the delivery fee while forming your order.
+            Besides, you can filter the restaurants by clicking on the "Free Delivery" icon at the top of your
+            restaurant listing.
+        </p>
+        <h4>What restaurants let you order online?</h4>
+        <p>There are hundreds of restaurants on foodpanda Pakistan that let you order online. For example, KFC,
+            McDonald's, Pizza Hut, OPTP, Hardee's, Domino's, Kababjees and many-many more! In order to check all the
+            restaurants near you that deliver, just type in your address and discover all the available places.
+        </p>
+        <h4>Does foodpanda have minimum order?</h4>
+        <p>Yes, many restaurants have a minimum order. The minimum order value depends on the restaurant you order from
+            and is indicated during your ordering process.
+        </p>
+        <h4>What is the difference between delivery and Pick-Up?</h4>
+        <p>If you choose delivery, a foodpanda rider will collect your order from the restaurant and take it to your
+            chosen delivery address. If you choose Pick-Up, you can takeaway your food directly from the restaurant for
+            extra savings – and to jump to the front of the queue. Pick-Up orders are available for restaurants only.
+        </p>
+        <h4>Order food and groceries online with foodpanda now and enjoy a great dining experience!</h4>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <hr>
+        <div class="effect logo">
+            <p></p><img src="./fd.jpeg" alt="picture" width="30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <h3 id="aaa">food panda</h3></p>
+        </div>
+            <hr>
+            <br>
+            <br>
+            <br>
+
+    <div class="footr_section" style="display: flex;">
+        <div class="first-col">
+            <p> @ 2023 foodpanda</p>
+        </div>
+        <div class="Second">
+            <p>Press Help Center refund with pandapay Panda user Account term and condition Privacy Policy Term and
+                condition
+                Security Download Food panda
+            </p>
+        </div>
+
+        <div class="third-col">
+            <p>Careers Suggest a restaurant Corporate Customer Cashback Terms and Conditions All cuisines foodpanda
+                Magazine Partner with us pandago - Request a rider foodpanda Vouchers&Promo</p>
+            <a href="#">Food panda voucher & Promo</a>
+
+        </div>
+
+        <div class="end">
+            <p>All cities Update on COVID-19 in Pakistan pandamart Grocery Delivery pandapro - monthly subscription
+                programme foodpanda home chef Become an affiliate Ramzan deals</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

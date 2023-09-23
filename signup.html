@@ -1,0 +1,214 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+    </head>
+  <style>
+    * {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+  
+
+/* Set a style for all buttons */
+button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1 px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+.clearfix1 button{
+  width:300px;
+  background-color: blue;
+  color: white;
+
+
+}
+.clearfix2 button{
+  width:300px;
+  background-color: white;
+  color: black;
+  text-align: inherit;
+  margin-left: 30px;
+ 
+ 
+
+}
+.clearfix3 button{
+  width:300px;
+  background-color: black;
+  color: white;
+  margin-left: 30px;
+
+}
+.clearfix4 button{
+  width:300px;
+  background-color: #ff2b85;
+  color: white;
+  margin-left: 30px;
+
+}
+.clearfix5 button{
+  width:300px;
+  background-color: white;
+  color: #ff2b85;
+  margin-left: 30px;
+  border: 1px solid #ff2b85;
+  font-weight: bold;
+
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  align-self: center;
+  height: 600px;
+  background-color: rgb(246, 246, 246);
+}
+
+.container1 {
+  padding: 16px;
+  align-self: center;
+}
+
+.overlap-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color:white;
+  /* Adjust the color and opacity as needed */
+  /* padding: 10px;
+z-index: 2; /* Set the stacking order higher than the image (e.g., 1) */
+  color: black;
+margin-left: 100px;
+  height: 600px;
+  width: 30%;
+  margin-left: 10%;
+  border: 3px solid rgba(255, 255, 255, 0.895);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 90px;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.logo {
+  margin-top: 24px;
+  margin-left: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff2b85;
+  font-family: Arial, Helvetica, sans-serif
+}
+.space{
+  width:2rem
+}
+
+
+
+  </style>
+  <body>
+<header style="display: flex;">
+    <div class="logo">
+      <img src="./logo.jpg" alt="pic of panda" width="50px" height="40px">
+  </div>
+  <div class="space"></div>
+  <div class="text">
+      <h3>foodpanda</h3>
+  </div>
+</header>
+    <form action="action_page.php" >
+      <div class="container" align="center">
+        <div class="overlap-box">
+        <h3>Welcome!</h3>
+        <p>Sign up or log in to continue</p>
+       
+        <div class="container1">
+        <div class="clearfix1" >
+         
+          <button type="submit" class="Continue with facebook">Continue with facebook</button>
+        </div>
+        <br>
+        
+        <div class="clearfix2" align="center">
+         
+          <button type="submit" class="signupbtn">Continue with google</button>
+        </div>
+        
+        <div class="clearfix3" align="center">
+          <br>
+          <br>
+          <br>
+          <h4 id="eee">or</h4>
+          <button type="submit" class="signupbtn">Continue with apple</button>
+        </div>
+        <br>
+        <br>
+        <!-- <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label> -->
+        <div class="clearfix4" align="center">
+         
+          <button type="submit" class="signupbtn">log in</button>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="clearfix5" align="center">
+         
+          <button type="submit" class="signupbtn">Sign Up</button>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p align="center" style="margin-right: 30px;">By signing up you agree to our term and condition and<br> private policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+  </body>
+    </html>
